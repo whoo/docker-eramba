@@ -1,12 +1,13 @@
 # docker-eramba
 
 
-```docker-compose up -d```
 
 
 First usage:
 ```
-docker run -it eramba_web_1 /bin/bash
+
+docker-compose up -d ### Wait for mysql
+docker exec -it eramba_web_1 /bin/bash
 php /root/init.php
 ```
 
