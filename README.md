@@ -11,7 +11,7 @@ eramba is an open-source, web-application and framework (largely based on ISO/IE
 
 ## Data
 - Data on mysql/data
-- change regarding your needs on ```docker-compose```
+- Change regarding your needs on ```docker-compose```
 
 ## First usage:
 ```
