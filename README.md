@@ -9,12 +9,15 @@ eramba is an open-source, web-application and framework (largely based on ISO/IE
 - debian 
 - mysql5.7
 
+## Data
+- Data on mysql/data
+- change regarding your needs on ```docker-compose```
 
-# First usage:
+## First usage:
 ```
 
 docker-compose up -d ### Wait for mysql
 docker exec -it eramba_web_1 /bin/bash
 php /root/init.php
-```
 
+```
