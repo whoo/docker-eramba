@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+ web:
+  build: ./web
+  ports:
+   - "8080:80"
+ mysql:
+  image: mysql:5.7
+  environment:
+   - MYSQL_ROOT_PASSWORD=secret
+   - MYSQL_USER=eramba
+   - MYSQL_PASSWORD=erambapwd
+  volumes:
+   - ./mysql/data:/var/lib/mysql
+   - ./mysql/conf:/etc/mysql/conf.d
+   - ./mysql/import:/local
+  command: '--sql-mode="" --innodb_lock_wait_timeout=200'
