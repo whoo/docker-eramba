@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:12
 RUN apt update -y && apt upgrade -y
 RUN apt install libapache2-mod-php7.0 php7.0-cli php7.0-gd php7.0-intl php7.0-json php7.0-mbstring php7.0-zip php7.0-ldap php7.0-curl php7.0-common php7.0-mysql php7.0-readline php7.0-xml php7.0-mcrypt -y
 RUN a2enmod rewrite
